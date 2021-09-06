@@ -31,7 +31,6 @@ My name is Yaroslav, I am 25 years old. I have 3 years of experience in website 
   * Vue.JS
   * Ext.JS
 * MySQL, MSSQL, PostgreSQL
-* Linux Web Servers
 
 # Work experience
 
