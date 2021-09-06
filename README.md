@@ -1,1 +1,1 @@
-# rsschool-cv
+https://jarpes.github.io/rsschool-cv/cv 
