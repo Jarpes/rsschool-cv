@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaroslav Pustavit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            
+            <nav>
+                
+                <ul class="desktop-menu">
+                    <li><a href="#work__experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <li><a href="#work__experience">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section class="personal">
+                <h1>Jaroslav <span>Pustavit</span></h1>
+                <div class="divider"></div>
+                <h2><span class="blue__font">Hello there, i'm a</span><br />Frontend Developer<br /><span
+                        class="blue__font">Based in Qostanay</span></h2>
+                <p class="about__me">
+                    I am 25 years old and I in the state of an eternal student and am not going to dwell on the acquired
+                    knowledge.
+                </p>
+            </section>
+            <div id="contacts" class="contacts">
+                <img class="photo"
+                    src="https://avatars.githubusercontent.com/u/9628437?s=400&u=dd330875f2e15d812a496670828d9acd116926e1&v=4"
+                    alt="CV Photo">
+                <div class="contacts__container blue__background first__contact_container">
+                    new.pustavit@gmail.com
+                </div>
+                <div class="contacts__container blue__background middle__contact_container">
+                    +7 705 562 26 65
+                </div>
+                <div class="contacts__container blue__background last__contact__container">
+                    <a href="https://github.com/Jarpes" target="_blank"> GitHub</a>
+                </div>
+                <div class="big__rectangle"></div>
+            </div>
+            <section id="work__experience">
+                <h2>Work Experience</h2>
+                <div class="experience">
+                    <div class="position">
+                        <p class="date blue__font">2019 - now</p>
+                        <h3>EPK Forfait</h3>
+                        <p class="name__position">Full Stack Web Developer</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2017 - 2018</p>
+                        <h3>Wingi</h3>
+                        <p class="name__position">Full Stack Web Developer</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2014 - 2017</p>
+                        <h3>Webtex</h3>
+                        <p class="name__position">Frontend Web Developer</p>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education">
+                    <div class="position">
+                        <p class="date blue__font">2015 - 2019</p>
+                        <h3>Qostanay Social & Technical University</h3>
+                        <p class="name__position">Information Systems</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2011 - 2015</p>
+                        <h3>Qostanay Social & Technical College</h3>
+                        <p class="name__position">Software Development</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Code example</h2>
+                <pre>
+                <code class="javascript">
+function spinWords(words) {
+    return  words.split(' ')
+           .map(function (word){
+            return (word.length > 4) 
+                  ? word.split('')
+                    .reverse()
+                    .join('') 
+                  : word;
+            }).join(' ');
+ } </code></pre>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <span class="skill">Front</span>
+                <ul>
+                    <li>JS</li>
+                    <li>Vue.JS</li>
+                    <li>Ext.JS</li>
+                </ul>
+                <span class="skill">Back</span>
+                <ul>
+                    <li>PHP</li>
+                    <li>Node.JS</li>
+                    <li>Express</li>
+                </ul>
+                <span class="skill">Database</span>
+                <ul>
+                    <li>SQL</li>
+                    <li>Firebase</li>
+                    <li>AWS</li>
+                </ul>
+                <span class="skill">Soft</span>
+                <ul>
+                    <li>Figma</li>
+                    <li>Jira</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>Languages</h2>
+                <ul class="languages">
+                    <li>Russian [Fluent]</li>
+                    <li>English [B1]</li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>My strengths</h2>
+                <ul class="languages">
+                    <li>High speed self-learning</li>
+                    <li>Work 72 hours straight ahead of the deadline</li>
+                    <li>Stress tolerance in mind of the deadlines</li>
+                </ul>
+            </section>
+            <div class="full__width__divider"></div>
+            <article id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="portfolio">
+                    <figure>
+                        <a href="https://integrus.ru/" target="_blank"><img src="img/1.png" alt="Logistic company"></a>
+                        <figcaption>
+                            <h4>1C franchisee on WordPress</h4>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://itakatrans.ru/" target="_blank"><img src="img/2.png" alt="Logistic company"></a>
+                        <figcaption><h4>Logistic company on WordPress</h4></figcaption>
+                    </figure>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="">
+                <a href="https://github.com/Jarpes" target="_blank"><img class="github" src="img/github.png" alt="GitHub"></a>
+            </div>
+                <p class="copyright"> J. V. P. &copy;&nbsp;2021</p>
+            <div class="">
+                <a href="https://rs.school/js/" target="_blank"><img class="rs" src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
