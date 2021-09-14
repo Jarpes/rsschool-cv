@@ -646,11 +646,11 @@ footer {
     }
 
     #menu {
-        width: 685px;
+        width: 664px;
         display: flex;
         padding-bottom: 15px;
         padding-top: 125px;
-        padding-left: 90px;
+        padding-left: 80px;
     }
 
     #menu li {   
