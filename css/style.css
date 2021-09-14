@@ -11,21 +11,17 @@ body {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     background-color: lightskyblue;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 main {
     padding-top: 50px;
-    padding-left: 70px;
+    padding-left: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 50px;
     background-color: #FFFFFF;
-}
-
-section {
-    flex: 0 1 calc(100% / 2 - 15px);
 }
 
 h1 {
@@ -82,14 +78,6 @@ h2 {
     padding-right: 15px;
     list-style-type: none;
     display: inline-block;
-}
-
-.contacts {
-    text-align: right;
-    background: url('../img/Ellipse-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 240px;
 }
 
 section>h2 {
@@ -162,18 +150,6 @@ section>h2 {
     margin-left: 50px;
 }
 
-.contacts__container {
-    text-align: center;
-    width: 280px;
-    height: 30px;
-    border-radius: 15px;
-    padding-top: 10px;
-    font-weight: 800;
-    color: #FFFFFF;
-    margin-bottom: 15px;
-    z-index: 9999;
-}
-
 .contacts__container a {
     color: #FFFFFF
 }
@@ -196,6 +172,18 @@ section>h2 {
     margin-left: -1em;
 }
 
+
+.contacts__container {
+    text-align: center;
+    width: 280px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 10px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    z-index: 9999;
+}
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -203,6 +191,7 @@ section>h2 {
 
 .about__me {
     padding-top: 27px;
+    padding-right: 20px;
 }
 
 pre {
@@ -223,26 +212,11 @@ pre {
     font-size: 14px;
 }
 
-.github {
-    width: 250px;
-    float: left;
-    margin-top: -50px;
-}
-
-.rs {
-    width: 150px;
-    float: right;
-    filter: invert(1);
-    margin-top: -25px;
-    margin-right: 15px;
-}
-
 .copyright {
     position: relative;
     color: white;
     width: 210px;
     margin: 0 auto;
-    margin-top: 50px;
     font-weight: 800;
 }
 
@@ -286,7 +260,12 @@ header {
 
 footer {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
 }
+
 @media (max-width: 992px) {
     #menuToggle {
         display: block;
@@ -407,6 +386,141 @@ footer {
     }
 }
 
+@media (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+    
+    pre {
+        margin-left: -20px;
+        margin-top: -33px;
+        font-size: 13px;
+    }
+
+    #menuToggle {
+        top: 0;
+        left: 0;
+        padding-left: 25px;
+    }
+
+    .full__width__divider {
+        margin-right: 33px;
+    }
+
+    #menuToggle input {
+        left: 20px;
+    }
+
+    #menu {
+        width: 245px;
+    }
+
+    .github {
+        width: 140px;
+    }
+    
+    .rs {
+        width: 100px;
+        filter: invert(1);
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+    
+    section {
+        padding-right: 25px;
+    }
+
+    .contacts {
+        background: url('../img/Ellipse-bg-left.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-left: -35px;
+    }
+    
+    .photo {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .contacts__container {
+        width: 255px;
+    }
+
+    .middle__contact_container {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 450px) {
+    .container {
+        width: 450px;
+    }
+    
+    pre {
+        margin-left: -8px;
+        margin-top: -33px;
+        font-size: 14px;
+    }
+
+    #menu {
+        width: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .github {
+        width: 250px;
+    }
+    
+
+    .full__width__divider {
+        margin-right: 60px;
+    }
+
+    .rs {
+        width: 150px;
+        filter: invert(1);
+    }
+
+    .container {
+        width: 800px;
+    }
+
+    .contacts__container {
+        text-align: center;
+        width: 280px;
+        height: 30px;
+        border-radius: 15px;
+        padding-top: 10px;
+        font-weight: 800;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        z-index: 9999;
+    }
+
+    .photo {
+        width: 260px;
+        border-radius: 50%;
+        margin-right: 120px;
+        margin-bottom: 50px;
+    }
+
+    section {
+        flex: 0 1 calc(100% / 2 - 15px);
+        padding-right: 0;
+    }
+
+    .contacts {
+        text-align: right;
+        background: url('../img/Ellipse-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 240px;
+    }
+}
+
 @media (min-width: 992px) {
     .container {
         width: 970px;
@@ -437,18 +551,5 @@ footer {
 @media (min-width: 1200px) {
     .container {
         width: 970px;
-    }
-}
-
-@media (min-width: 320px) {
-    .container {
-        width: 320px;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .container {
-        width: 550px;
     }
 }
