@@ -10,15 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            
+
             <nav>
-                
+
                 <ul class="desktop-menu">
                     <li><a href="#work__experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
@@ -28,19 +30,19 @@
                 </ul>
 
                 <div id="menuToggle">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <li><a href="#work__experience">Work experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                  </ul>
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="#work__experience">Work experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
                 </div>
-              </nav>
+            </nav>
         </header>
         <main>
             <section class="personal">
@@ -52,6 +54,8 @@
                     I am 25 years old and I in the state of an eternal student and am not going to dwell on the acquired
                     knowledge.
                 </p>
+                <a target="_blank" href="https://youtu.be/S3A1HGvviLI"><img class="youtube" src="img/youtube.svg"
+                        alt="Self-introduction"></a>
             </section>
             <div id="contacts" class="contacts">
                 <div class="decoration decoration__rectangle__3"></div>
@@ -135,6 +139,7 @@ function spinWords(words) {
                     <li>JS</li>
                     <li>Vue.JS</li>
                     <li>Ext.JS</li>
+                    <li>Quasar</li>
                 </ul>
                 <span class="skill">Back</span>
                 <ul>
@@ -158,8 +163,8 @@ function spinWords(words) {
             <section class="languages">
                 <h2>Languages</h2>
                 <ul class="languages">
-                    <li>Russian [Fluent]</li>
                     <li>English [B1]</li>
+                    <li>Russian [Fluent]</li>
                 </ul>
             </section>
             <section class="languages">
@@ -181,34 +186,40 @@ function spinWords(words) {
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://itakatrans.ru/" target="_blank"><img src="img/2.png" alt="Logistic company"></a>
-                        <figcaption><h4>Logistic company on WordPress</h4></figcaption>
+                        <a href="https://itakatrans.ru/" target="_blank"><img src="img/2.png"
+                                alt="Logistic company"></a>
+                        <figcaption>
+                            <h4>Logistic company on WordPress</h4>
+                        </figcaption>
                     </figure>
                 </div>
             </article>
         </main>
         <footer>
             <div class="">
-                <a href="https://github.com/Jarpes" target="_blank"><img class="github" src="img/github.png" alt="GitHub"></a>
+                <a href="https://github.com/Jarpes" target="_blank"><img class="github" src="img/github.png"
+                        alt="GitHub"></a>
             </div>
-                <p class="copyright"> J. V. P. &copy;&nbsp;2021</p>
+            <p class="copyright"> J. V. P. &copy;&nbsp;2021</p>
             <div class="">
-                <a href="https://rs.school/js/" target="_blank"><img class="rs" src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
+                <a href="https://rs.school/js/" target="_blank"><img class="rs"
+                        src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
             </div>
         </footer>
     </div>
     <script>
-    let links = document.querySelectorAll('a[href*="#"]')
+        let links = document.querySelectorAll('a[href*="#"]')
         for (let link of links) {
             link.addEventListener('click', function (event) {
-            event.preventDefault()
-            let id = link.getAttribute('href').substr(1)
-            document.getElementById(id).scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+                event.preventDefault()
+                let id = link.getAttribute('href').substr(1)
+                document.getElementById(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
             })
-          })
         }
     </script>
 </body>
+
 </html>
