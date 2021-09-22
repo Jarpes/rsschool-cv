@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaroslav Pustavit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav>
+
+                <ul class="desktop-menu">
+                    <li><a href="#work__experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="#work__experience">Work experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="personal">
+                <h1>Jaroslav <span>Pustavit</span></h1>
+                <div class="divider"></div>
+                <h2><span class="blue__font">Hello there, i'm a</span><br />Frontend Developer<br /><span
+                        class="blue__font">Based in Qostanay</span></h2>
+                <p class="about__me">
+                    I am 25 years old and I in the state of an eternal student and am not going to dwell on the acquired
+                    knowledge.
+                </p>
+                <a target="_blank" href="https://youtu.be/S3A1HGvviLI"><img class="youtube" src="./img/YouTube.svg"
+                        alt="Self-introduction"></a>
+            </section>
+            <div id="contacts" class="contacts">
+                <div class="decoration decoration__rectangle__3"></div>
+                <div class="decoration decoration__rectangle__2"></div>
+                <div class="decoration decoration__rectangle__1"></div>
+                <div class="decoration decoration__ellipce__1"></div>
+                <div class="decoration decoration__ellipce__2"></div>
+                <div class="decoration decoration__ellipce__3"></div>
+                <div class="decoration decoration__ellipce__4"></div>
+                <img class="photo" src="./img/photocv.png" alt="CV Photo">
+                <div class="contacts__container blue__background first__contact_container">
+                    new.pustavit@gmail.com
+                </div>
+                <div class="contacts__container blue__background middle__contact_container">
+                    +7 705 562 26 65
+                </div>
+                <div class="contacts__container blue__background last__contact__container">
+                    <a href="https://github.com/Jarpes" target="_blank"> GitHub</a>
+                </div>
+                <div class="big__rectangle"></div>
+            </div>
+            <section id="work__experience">
+                <h2>Work Experience</h2>
+                <div class="experience">
+                    <div class="position">
+                        <p class="date blue__font">2019 - now</p>
+                        <h3>EPK Forfait</h3>
+                        <p class="name__position">Full Stack Web Developer</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2017 - 2018</p>
+                        <h3>Wingi</h3>
+                        <p class="name__position">Full Stack Web Developer</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2014 - 2017</p>
+                        <h3>Webtex</h3>
+                        <p class="name__position">Frontend Web Developer</p>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education">
+                    <div class="position">
+                        <p class="date blue__font">2021 - now</p>
+                        <h3>The Rolling Scopes</h3>
+                        <p class="name__position">Frontend Developer</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2015 - 2019</p>
+                        <h3>Qostanay Social & Technical University</h3>
+                        <p class="name__position">Information Systems</p>
+                    </div>
+                    <div class="position">
+                        <p class="date blue__font">2011 - 2015</p>
+                        <h3>Qostanay Social & Technical College</h3>
+                        <p class="name__position">Software Development</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Code example</h2>
+                <pre>
+                <code class="javascript">
+function spinWords(words) {
+    return  words.split(' ')
+           .map(function (word){
+            return (word.length > 4) 
+                  ? word.split('')
+                    .reverse()
+                    .join('') 
+                  : word;
+            }).join(' ');
+ } </code></pre>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <span class="skill">Front</span>
+                <ul>
+                    <li>JS</li>
+                    <li>Vue.JS</li>
+                    <li>Ext.JS</li>
+                    <li>Quasar</li>
+                </ul>
+                <span class="skill">Back</span>
+                <ul>
+                    <li>PHP</li>
+                    <li>Node.JS</li>
+                    <li>Express</li>
+                </ul>
+                <span class="skill">Database</span>
+                <ul>
+                    <li>SQL</li>
+                    <li>Firebase</li>
+                    <li>AWS</li>
+                </ul>
+                <span class="skill">Soft</span>
+                <ul>
+                    <li>Figma</li>
+                    <li>Jira</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>Languages</h2>
+                <ul class="languages">
+                    <li>English [B1]</li>
+                    <li>Russian [Fluent]</li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>My strengths</h2>
+                <ul class="languages">
+                    <li>High speed self-learning</li>
+                    <li>Craving for new knowledge</li>
+                    <li>Resistance to stress developed over the years</li>
+                </ul>
+            </section>
+            <div class="full__width__divider"></div>
+            <article id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="portfolio">
+                    <figure>
+                        <a href="https://integrus.ru/" target="_blank"><img src="img/1.png" alt="Logistic company"></a>
+                        <figcaption>
+                            <h4>1C franchisee on WordPress</h4>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://itakatrans.ru/" target="_blank"><img src="img/2.png"
+                                alt="Logistic company"></a>
+                        <figcaption>
+                            <h4>Logistic company on WordPress</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <div class="full__width__divider"></div>
+            <article id="self_introduction">
+                <h2>Self-introduction</h2>
+                <div class="introduction">
+                    <iframe class="video" src="https://www.youtube.com/embed/S3A1HGvviLI?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="">
+                <a href="https://github.com/Jarpes" target="_blank"><img class="github" src="img/github.png"
+                        alt="GitHub"></a>
+            </div>
+            <p class="copyright"> J. V. P. &copy;&nbsp;2021</p>
+            <div class="">
+                <a href="https://rs.school/js/" target="_blank"><img class="rs"
+                        src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let links = document.querySelectorAll('a[href*="#"]');
+
+        for (let link of links) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault()
+                let id = link.getAttribute('href').substr(1)
+                document.getElementById(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        }
+
+        console.log("Score: 160 / 150\n\n[x] вёрстка валидная (10)\n[x] вёрстка семантическая (20)\n[x] для оформления СV используются css-стили (10)\n[x] контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы (10)\n[x] вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется (10)\n[x] есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. (10)\n[x] на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) (10)\n[x] контакты для связи и перечень навыков оформлены в виде списка ul > li (10)\n[x] CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского (10)\n[x] CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода (10)\n[x] CV содержит изображения-ссылки на выполненные вами проекты (10)\n[x] CV выполнено на английском языке (10)\n[x] выполнены требования к Pull Request (10)\n[x] есть видеорезюме автора CV на английском языке (10)\n[x] дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (10)");
+    </script>
+</body>
+</html>
